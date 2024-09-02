@@ -18,7 +18,7 @@ function CreatePost() {
     if (form.prompt) {
       try {
         setGeneratingImg(true);
-        const request = await fetch("http://localhost:8000/api/v1/dalle", {
+        const request = await fetch("https://dalleai-mern.onrender.com/api/v1/dalle", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -41,7 +41,7 @@ function CreatePost() {
     if (form.name && form.prompt) {
       setLoading(true);
       try {
-        const response = await fetch("http://localhost:8000/api/v1/post", {
+        const response = await fetch("https://dalleai-mern.onrender.com/api/v1/post", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

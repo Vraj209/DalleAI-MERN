@@ -22,7 +22,7 @@ function Home() {
     const fetchPost = async () => {
       setLoading(true);
       try {
-        const response = await fetch("http://localhost:8000/api/v1/post", {
+        const response = await fetch("https://dalleai-mern.onrender.com/api/v1/post", {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
